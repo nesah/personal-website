@@ -73,6 +73,7 @@ body{
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
+    transition: scroll;
 }
 
 .hero {
@@ -99,21 +100,35 @@ body{
 }
 
 .connect{
+    display: flex;
+    flex-direction: column;
     padding: 0 10%;
     margin-top: -60px;
     color: #FFF;
     font-weight: bolder;
 }
 
+.contacts-logo{
+    display: flex;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.connect img{
+    width: 30px;
+    margin: 15px 30px 0 0;
+    border: #fff;
+    border-width: 30px;
+}
 
 .quote {
     border: 1px black solid;
 }
 
-/*---------------ABOUT---------------------*/
+/*---------------ABOUT---------------*/
 .about {   
     width: 100%;
-    height: 1920px;
+    height: 1800px;
     background-image: url("images/bg-2.png");
     background-size: cover;
     background-position: center;
@@ -128,28 +143,229 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 10%;
 }
 
 .left{
-    flex-basis: 60%;
+    flex-basis: 55%;
+    text-align: right;
 }
-/*
-.left img{
 
-}*/
+/*----------------container----------------*/
+#subtitle{
+    font-size: 50px;
+}
+
+#description {
+    font-size: 15px;
+}
+
+.tabs{
+    margin-top: 40px;
+    display: flex;
+    justify-content: right;
+}
+
+.tab-links{
+    margin-left: auto;
+    margin-right: 0;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+iframe{
+    border: 0;
+    margin-top: 5px;
+    height: 250px;
+}
 
 .right{
-    flex-basis: 5%
+    flex-basis: 35%;
+    border-width: 10px;
+    border-color: black;
+    width: 60px;
+    overflow: hidden;
 }
 
-.skills {
-    border: 1px black solid;
+#right-img{
+    width: 110%;
+    border-radius: 20px;
 }
 
-.projects {
-    border: 1px black solid;
+/*----------programming skills------------*/
+
+.skills-header{
+    margin-top: 10%;
+    font-size: 60px;
+    color: #BF40BF;
+    text-align: center;
 }
+
+.programming-skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo1, .logo2, .logo3, .logo4, .logo5{
+    width: 13%;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 10% 8px 10% 8px;
+    padding: 0px 30px;
+    opacity: 60%;
+    display: flex;
+    align-items: center;
+}
+
+#java{
+    width: 90%;
+    height: 70%;
+    align-self: center;
+}
+#C{
+    width: 90%;
+    height: 70%;
+    align-self: center;
+}
+#python{
+    width: 90%;
+    height: 60%;
+    align-self: center;
+}
+#dotnet{
+    width: 90%;
+    height: 50%;
+    align-self: center;
+}
+#bootstrap{
+    width: 90%;
+    height: 50%;
+    align-self: center;
+}
+
+/*-----------projects-----------*/
+.proj-header{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 60px;
+    color: #E6AFFC;
+    text-align: center;
+}
+
+.projects{
+    background-color: #301934;
+    padding: 2em;
+}
+
+.slider-wrapper{
+    position: relative;
+    max-width: 68rem;
+    margin: 0 auto;
+}
+
+.slider{
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0% 0.25);
+    border-radius: 1rem;
+}
+
+.slider img{
+    flex: 1 0 100% ;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover{
+    opacity: 1;
+}
+
+/*---------footer-----------*/
 
 .footer {
-    border: 1px black solid;
+    margin-top: 10px;
 }
+
+.contact{
+    background-color: #E6AFFC;
+    padding: 5% 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.contacts-logo img{
+    width: 30px;
+    margin: 15px 30px 0 0;
+    border: #fff;
+    border-width: 30px;
+    background-color: #301934;
+    border-radius: 10px;
+}
+
+.email{
+    padding: 0 10%;
+    float: left;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.email-button{
+    padding: 10px;
+    border-radius: 15px;
+    width: 150px;
+    border-width: 0;
+}
+
+.link-logo{
+    padding: 0 10%;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+#footer-logo{
+    width: 100px;
+    cursor: pointer;
+}
+
+.footer-deets{
+    padding: 5% 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.copyright{
+    background-color: #E6AFFC;
+    text-align: center;
+    font-size: 14       px;
+    padding: 30px;
+}
+
+#name{
+    font-weight: bold;
+}
+
+

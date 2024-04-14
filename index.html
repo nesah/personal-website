@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang=en>
     <head>
-        <title>Shane's Website</title>
+        <title>Home | Shane's Portfolio</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="/images/sdr-logo.svg">
         <link el="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     </head>
 
     <body>
-        <div class="main">
+        <div class="main" id="main-section">
 
             <div class="navHeader">
 
                 <img id="logo" src="images/sdr-logo.svg" alt="Shane Logo">
                 <ul>
-                    <li><a href="">About Me</a></li>
-                    <li><a href="">Resume</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><button class="contactme">Contact Me</button></li>
+                    <li><a href="#about-section">About Me</a></li>
+                    <li><a href="resume.html" target="_blank">Resume</a></li>
+                    <li><a href="#project-section">Projects</a></li>
+                    <li><button class="contactme" onclick="window.location.href='#contact-section';">Contact Me</button></li>
                 </ul>
 
             </div>
@@ -30,37 +31,112 @@
                 </div>
 
                 <div class="connect">
-                    <p>CONNECT WITH ME</p>
+                    <p id="connect-text">CONNECT WITH ME</p>
                     <div class="contacts-logo">
-                        Logo Here
+                        <a href="https://www.facebook.com/shadelrey"><img id="fb-logo" src="images/FB.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/sha.dlry/"><img id="ig-logo" src="images/IG.png" alt="Instagram"></a>
+                        <a href="https://www.linkedin.com/in/shane-delos-reyes-1b6353242/"><img id="in-logo" src="images/LINKEDIN.png" alt="LinkedIn"></a>
+                        <a href="https://github.com/nesah"><img id="git-logo" src="images/git.png" alt="GitHub"></a>
                     </div>
                 </div>
             </div>
 
-            <div class="quote">
-                quote
-            </div>
-
-            <div class="about">
+            <div class="about" id="about-section">
                 <div id="container">
                     <div class="row">
                         <div class="left">
-                            <h1>Who is Shane?</h1>
+                            <h1 id="subtitle">Who is Shane?</h1>
+                            <p id="description">Driven by my motivation to improve, I always try to expand my comfort-zone rather than get out of it. 
+                                As a young person in the industry, I am full of ideas and energy for discovery and innovation thus, 
+                                I always seek to try and learn new things. I can easily adapt and prefer to learn independently 
+                                yet I work well in teams and can lead a group effectively.</p>
+                                
+                                <div class="tabs">
+                                    <div class="tab-affi">
+                                    <p class="tab-links">Affiliations</p>
+                                    <iframe src="affiliations.html"></iframe>
+                                    </div>    
+
+                                    <div class="tab-educ">
+                                        <p class="tab-links">Education</p>
+                                        <iframe src="educ.html"></iframe>
+                                    </div>
+                                </div>
+                                
+
                         </div>
 
                         <div class="right">
-                            Image Here
+                            <img id="right-img" src="images/Shane Delos Reyes - VP Records.png" alt="Shane">
                         </div>
                     </div>
                 </div> 
+                
+                <h1 class="skills-header">Programming Languages</h1>
+                <div class="programming-skills">
+                    <div class="logo1">
+                        <img id="java" src="images/java.png" alt="Java">
+                    </div>
+                    <div class="logo2">
+                        <img id="C" src="images/C.png" alt="C">
+                    </div>
+                    <div class="logo3">
+                        <img id="python" src="images/python.png" alt="python">
+                    </div>
+                    <div class="logo4">
+                        <img id="dotnet" src="images/net.png" alt=".Net">
+                    </div>
+                    <div class="logo5">
+                        <img id="bootstrap" src="images/bootstrap.png" alt="bootstrap">
+                    </div>
+                </div>
             </div>
 
-            <div class="projects">
-                prjz
+            <div class="projects" id="project-section">
+                <h1 class="proj-header">Projects</h1>
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img id="slide1" src="./images/redalert.png" alt="redalert">
+                        <img id="slide2" src="./images/lutong bahay.png" alt="lutongbahay">
+                        <img id="slide3" src="./images/cloudway airlines.png" alt="cloudway">
+                    </div>
+                <div class="slider-nav">
+                    <a href="#proj1"></a>
+                    <a href="#proj2"></a>
+                    <a href="#proj3"></a>                   
+                </div>  
+                </div>
+                
             </div>
 
-            <div class="footer">
-                footer + contact deets
+            <div class="footer" id="contact-section">
+                <div class="contact">
+                    <a href="#main-section"><img id="footer-logo" src="images/sdr-logo.svg" alt="Shane Logo"></a>
+                    
+                    <div class="email">
+                        <h1>Let's Talk</h1>
+                        <p>Reach out to me!</p><br>
+                        <button class="email-button" onclick="location.href='mailto:sdelosreyes0421@gmail.com';">Send an Email</button>
+                    </div>
+
+                    <div class="link-logo">
+                        <h1>Connect with me</h1>
+                        <p>Find me in the internet</p>
+                        <div class="contacts-logo">
+                            <a href="https://www.facebook.com/shadelrey"><img id="fb-logo" src="images/FB.png" alt="Facebook"></a>
+                            <a href="https://www.instagram.com/sha.dlry/"><img id="ig-logo" src="images/IG.png" alt="Instagram"></a>
+                            <a href="https://www.linkedin.com/in/shane-delos-reyes-1b6353242/"><img id="in-logo" src="images/LINKEDIN.png" alt="LinkedIn"></a>
+                            <a href="https://github.com/nesah"><img id="git-logo" src="images/git.png" alt="GitHub"></a>
+                        </div>
+                    </div>
+                     
+                </div>
+                <div class="copyright">
+                    <p id="name">SHANE A. DELOS REYES</p>
+                    All Rights Reserved © 2024
+                </div>  
+            
+
             </div>
 
         </div>
